@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: gainsboro;
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.frm {
+    position: relative;
+    margin-top: 5rem;
+    padding: 1.5rem;
+    background-color: whitesmoke;
+    box-shadow: 0 1rem 3rem rgba(15, 0, 146, 0.1);
+    border-radius: 0.3rem;
+}
+
+.btn-close {
+    margin: 0.6rem 1rem;
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    right: 0;
+    font-size:2rem;
+    font-weight: lighter;
+    color: rgb(137, 146, 155);
+}
+
+.frm h4 {
+    max-width: 80%;
+    text-align: center;
+    margin: 0.3rem 0;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+
+.frm-content {
+    padding: 1rem 0;
+}
+
+.content-desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.frm-foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.frm p {
+    cursor: pointer;
+    font-size: small;
+    color: rgb(137, 146, 155);
+}
+
+.frm-content p {
+    display: inline;
+    cursor: default;
+    font-size: 0.7rem;
+}
+
+button {
+    border: none;
+    padding: 0.5rem 1rem;
+    background-color: #3457DC;
+    color:white;
+    border-radius: 0.3rem;
+    font-weight: bold;
+    transition: background-color 200ms ease;
+}
+
+button:hover {
+    background-color: #667edf;
+    transition: background-color 200ms ease;
+}
+
+
+footer {
+    padding: 5rem 0;
+    text-align: center;
+}

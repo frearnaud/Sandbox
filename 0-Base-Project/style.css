@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: gainsboro;
+    margin: 0;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    padding: 5rem 0;
+    text-align: center;
+}
