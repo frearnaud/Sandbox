@@ -1,93 +1,148 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap");
+
+:root {
+  --font: "Kumbh Sans", sans-serif;
+}
 
 body {
-    font-family: 'Kumbh Sans', sans-serif;
-    background-color: gainsboro;
-    margin: 0;
-    height: 100vh;
+  font-family: var(--font);
+  background-color: gainsboro;
+  margin: 0;
+  height: 100vh;
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .frm {
-    position: relative;
-    margin-top: 5rem;
-    padding: 1.5rem;
-    background-color: whitesmoke;
-    box-shadow: 0 1rem 3rem rgba(15, 0, 146, 0.1);
-    border-radius: 0.3rem;
+  position: relative;
+  margin: 3rem;
+  padding: 1.5rem;
+  background-color: whitesmoke;
+  box-shadow: 0 1rem 1rem rgba(15, 0, 146, 0.07);
+  border-radius: 0.3rem;
 }
 
 .btn-close {
-    margin: 0.6rem 1rem;
-    cursor: pointer;
-    position: absolute;
-    top:0;
-    right: 0;
-    font-size:2rem;
-    font-weight: lighter;
-    color: rgb(137, 146, 155);
+  margin: 0.6rem 1rem;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  font-weight: lighter;
+  color: rgb(137, 146, 155);
 }
 
-.frm h4 {
-    max-width: 80%;
-    text-align: center;
-    margin: 0.3rem 0;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
+h4 {
+  max-width: 80%;
+  text-align: center;
+  margin: 0.3rem 0;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+
+h5 {
+  margin: 1em 0 0.5em 0;
 }
 
 .frm-content {
-    padding: 1rem 0;
+  padding: 1rem 0;
+}
+
+.content-in {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.3rem;
+}
+
+textarea {
+  font-family: var(--font);
+  font-size: 0.8rem;
+  border: 0.15rem solid #bec9f4;
+  border-radius: 0.3rem;
+  height: 5rem;
+  width: 100%;
+  resize: none;
+  box-sizing: border-box;
+  padding: 0.5rem;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #3457dc;
+  box-sizing: border-box;
+}
+
+input[type="radio"] {
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -9999px;
+}
+
+input[type="radio"] + label {
+  cursor: pointer;
+  display: block;
+  border: 0.15rem solid #bec9f4;
+  border-radius: 0.3rem;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2.3rem;
 }
 
 .content-desc {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .frm-foot {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .frm p {
-    cursor: pointer;
-    font-size: small;
-    color: rgb(137, 146, 155);
+  cursor: pointer;
+  font-size: small;
+  color: rgb(137, 146, 155);
 }
 
 .frm-content p {
-    display: inline;
-    cursor: default;
-    font-size: 0.7rem;
+  display: inline;
+  cursor: default;
+  font-size: 0.7rem;
+}
+
+.frm-content img {
+  max-width: 5rem;
 }
 
 button {
-    border: none;
-    padding: 0.5rem 1rem;
-    background-color: #3457DC;
-    color:white;
-    border-radius: 0.3rem;
-    font-weight: bold;
-    transition: background-color 200ms ease;
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem 1rem;
+  background-color: #3457dc;
+  color: white;
+  border-radius: 0.3rem;
+  font-weight: bold;
+  transition: background-color 200ms ease;
 }
 
 button:hover {
-    background-color: #667edf;
-    transition: background-color 200ms ease;
+  background-color: #667edf;
+  transition: background-color 200ms ease;
 }
 
-
 footer {
-    padding: 5rem 0;
-    text-align: center;
+  padding: 5rem 0;
+  text-align: center;
 }
