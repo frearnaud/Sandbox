@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap");
+
+:root {
+  --font-fam: "Kumbh Sans", sans-serif;
+  --clr-bgd: gainsboro;
+  --clr-color: black;
+  --clr-link: blue;
+  --drk-bgd: #0d0d20;
+  --drk-color: white;
+  --drk-link: #d4d4e7;
+}
+
+body {
+  font-family: var(--font-fam);
+  background-color: var(--drk-bgd);
+  color: var(--drk-color);
+  margin: 0;
+  height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+a {
+  color: var(--drk-link);
+}
+
+footer {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.head {
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5rem;
+}
+
+.card {
+  margin: 0 0.7rem;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 1rem;
+  background-color: #171727;
+  transition: all 250ms;
+}
+
+.card:hover {
+  background-color: #242486;
+  transition: all 250ms;
+}
+
+.price {
+  font-weight: bold;
+}
+
+button {
+  padding: 1rem 2rem;
+  font-family: var(--font-fam);
+  background-color: var(--bgd-color);
+  color: #7575ab;
+  border: 0.1rem solid #7575ab;
+  border-radius: 0.5rem;
+}

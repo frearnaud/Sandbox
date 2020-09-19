@@ -1,17 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap");
+
+:root {
+  --font-fam: "Kumbh Sans", sans-serif;
+  --clr-bgd: gainsboro;
+  --clr-color: black;
+  --clr-link: #242486;
+  --drk-bgd: #0d0d20;
+  --drk-color: white;
+  --drk-link: #d4d4e7;
+}
 
 body {
-    font-family: 'Kumbh Sans', sans-serif;
-    background-color: gainsboro;
-    margin: 0;
-    height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--clr-bgd);
+  margin: 0;
+  height: 100vh;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
+}
+
+a {
+  color: var(--clr-link);
 }
 
 footer {
-    padding: 5rem 0;
-    text-align: center;
+  padding: 5rem 0;
+  text-align: center;
 }
