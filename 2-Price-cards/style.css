@@ -71,13 +71,23 @@ p {
   transition: all 250ms;
 }
 
-.card p {
-  margin-top: 2rem;
+.card :nth-child(1) {
+  margin: 2.5rem 2rem;
+  font-size: larger;
 }
 
 .card:hover {
   background-color: #242486;
   transition: all 250ms;
+}
+
+.best {
+  text-align: center;
+  padding: 0.2rem 0;
+  background-color: #a0e0b2;
+  color: var(--drk-bgd);
+  border-radius: 5rem;
+  transform: translateY(-10.2rem);
 }
 
 .price {
