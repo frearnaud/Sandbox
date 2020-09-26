@@ -10,6 +10,11 @@
   --drk-link: #d4d4e7;
 }
 
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Kumbh Sans", sans-serif;
   background-color: var(--clr-bgd);

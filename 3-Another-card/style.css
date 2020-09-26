@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;300;400;700&display=swap");
+
+:root {
+  --font-fam: "Kumbh Sans", sans-serif;
+  --clr-bgd: #a897fb;
+  --clr-color: black;
+  --clr-link: #242486;
+  --drk-bgd: #0d0d20;
+  --drk-color: white;
+  --drk-link: #d4d4e7;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--clr-bgd);
+  margin: 0;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  color: var(--clr-link);
+}
+
+.container {
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 5rem;
+  position: relative;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 2rem 2rem rgb(36, 36, 134, 0.2);
+}
+
+.card span {
+  margin: 1.4rem 2.2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #a897fb;
+  font-size: 2.4rem;
+}
+
+.card a {
+  padding: 0.7rem;
+  background-color: #653df2;
+  color: white;
+  border-radius: 0.3rem;
+  text-decoration: none;
+}
+
+.card-profil {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 0.15rem solid #f0e9ff;
+  padding: 1rem 0;
+}
+
+.card-profil img {
+  border-radius: 50rem;
+  width: 5rem;
+  height: 5rem;
+}
+
+.card-profil .card-name {
+  margin: 0 1rem;
+}
+
+.premium {
+  padding: 3rem;
+  color: white;
+  background: rgb(132, 104, 255);
+  background: linear-gradient(
+    117deg,
+    rgba(132, 104, 255, 1) 0%,
+    rgba(132, 104, 255, 1) 60%,
+    rgba(120, 91, 247, 1) 60%,
+    rgba(120, 91, 247, 1) 100%
+  );
+}
+
+footer {
+  padding: 5rem 0;
+  text-align: center;
+}
