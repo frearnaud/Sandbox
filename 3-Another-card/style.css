@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;700&display=swap");
 
 :root {
-  --font-fam: "Kumbh Sans", sans-serif;
+  --font-fam: "Inter", sans-serif;
   --clr-bgd: #a897fb;
   --clr-color: black;
   --clr-link: #242486;
@@ -10,15 +10,19 @@
   --drk-link: #d4d4e7;
 }
 
-* {
-  margin: 0;
+html {
   box-sizing: border-box;
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: var(--font-fam);
   background-color: var(--clr-bgd);
-  margin: 0;
   height: 100vh;
 }
 
@@ -39,21 +43,30 @@ a {
   flex-wrap: wrap;
 }
 
+h2 {
+  margin: 0;
+  line-height: 2.2rem;
+}
+
 .card {
   margin: 5rem;
   position: relative;
   background-color: white;
   border-radius: 1rem;
   box-shadow: 0 2rem 2rem rgb(36, 36, 134, 0.2);
+  max-width: 27rem;
+  min-width: 20rem;
 }
 
-.card span {
+.close {
+  cursor: pointer;
   margin: 1.4rem 2.2rem;
   position: absolute;
   top: 0;
   right: 0;
   color: #a897fb;
   font-size: 2.4rem;
+  font-weight: 200;
 }
 
 .card a {
@@ -68,19 +81,25 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
-  border-bottom: 0.15rem solid #f0e9ff;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
+}
+
+.separator {
+  margin: auto;
+  width: 81%;
+  height: 0.15rem;
+  background: #f0e9ff;
 }
 
 .card-profil img {
   border-radius: 50rem;
   width: 5rem;
   height: 5rem;
+  margin: 0 0.7rem 0 1.5rem;
 }
 
-.card-profil .card-name {
-  margin: 0 1rem;
+.card-profil .card-name * {
+  margin: 0.2rem 0;
 }
 
 .premium {
