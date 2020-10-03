@@ -48,6 +48,11 @@ h2 {
   line-height: 2.2rem;
 }
 
+p {
+  line-height: 1.5rem;
+  margin: 2rem 0;
+}
+
 .card {
   margin: 5rem;
   position: relative;
@@ -69,12 +74,19 @@ h2 {
   font-weight: 200;
 }
 
-.card a {
+.card button {
+  cursor: pointer;
   padding: 0.7rem;
   background-color: #653df2;
   color: white;
   border-radius: 0.3rem;
-  text-decoration: none;
+  border: none;
+  transition: 150ms ease;
+}
+
+.card button:hover {
+  background-color: #242486;
+  transition: 150ms ease;
 }
 
 .card-profil {
@@ -113,6 +125,31 @@ h2 {
     rgba(120, 91, 247, 1) 60%,
     rgba(120, 91, 247, 1) 100%
   );
+}
+
+ul {
+  margin: 2rem 0;
+  padding: 0;
+}
+
+ul li {
+  margin: 0.2rem 1.9rem;
+  height: 3rem;
+  line-height: 3rem;
+  list-style-type: none;
+  transition: 150ms ease;
+}
+
+ul li:hover {
+  background-color: #f0e9ff;
+  border-radius: 0.3rem;
+  transition: 150ms ease;
+}
+
+li img {
+  vertical-align: middle;
+  height: 24px;
+  margin: 0 0.7rem;
 }
 
 footer {
