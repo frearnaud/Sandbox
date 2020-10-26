@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600&display=swap");
+
+:root {
+  --col-violet: hsl(263, 55%, 52%);
+  --col-drk-gblue: hsl(217, 19%, 35%);
+  --col-drk-bblue: hsl(219, 29%, 14%);
+  --col-white: hsl(0, 0%, 100%);
+  --col-lt-gray: hsl(0, 0%, 81%);
+  --col-lt-gblue: hsl(210, 46%, 95%);
+  --ft-family: "Barlow Semi Condensed", "Sans Serif";
+}
+
+body {
+  font-family: var(--ft-family);
+  background-color: var(--col-lt-gray);
+  font-size: 13px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10em;
+}
+
+.container .testimonial:nth-child(1) {
+  background-color: var(--col-violet);
+}
+
+.container .testimonial:nth-child(2) {
+  background-color: var(--col-drk-gblue);
+}
+
+.container .testimonial:nth-child(3) {
+  background-color: var(--col-lt-gblue);
+}
+
+.container .testimonial:nth-child(4) {
+  background-color: var(--col-drk-bblue);
+}
+
+.container .testimonial:nth-child(5) {
+  background-color: var(--col-lt-gblue);
+}
+
+.testimonial {
+  padding: 2em;
+}
+
+.user-profile {
+  position: relative;
+}
+
+.user-profile img {
+  float: left;
+  border-radius: 100%;
+}
+
+.user-name {
+  font-weight: bold;
+}

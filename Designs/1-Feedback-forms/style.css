@@ -107,6 +107,10 @@ input[type="radio"] + label {
   line-height: 1.8rem;
 }
 
+input[type="radio"] + label:hover {
+  background-color: #3457dc;
+}
+
 .content-desc {
   display: flex;
   flex-direction: row;
