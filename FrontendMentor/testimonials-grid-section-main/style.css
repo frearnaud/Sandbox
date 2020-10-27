@@ -42,6 +42,7 @@ p {
 }
 
 .container .testimonial:nth-child(1) {
+  position: relative;
   color: var(--col-white);
   grid-column: 1 / 3;
   grid-row: 1 / 2;
@@ -75,10 +76,22 @@ p {
 }
 
 .testimonial {
+  z-index: -1;
   padding: 2.5em;
   margin: 1.2em;
   border-radius: 0.7em;
   box-shadow: 2em 2em 2em rgba(0, 0, 0, 0.1);
+}
+
+.testimonial > p {
+  opacity: 0.7;
+}
+
+.testimonial > img {
+  z-index: -2;
+  top: 0;
+  right: 6.5em;
+  position: absolute;
 }
 
 .user-profile {
@@ -95,4 +108,8 @@ p {
 
 .user-name {
   font-weight: bold;
+}
+
+.user-status {
+  opacity: 0.5;
 }
