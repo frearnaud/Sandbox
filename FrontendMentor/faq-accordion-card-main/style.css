@@ -83,15 +83,50 @@ p.active {
   .frm-faq {
     padding: 7em 7em 7em 0;
   }
+
+  .frm-decoration {
+    background: url("./images/illustration-woman-online-desktop.svg"),
+      url("./images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%, 200%;
+    background-position-x: -6em, -41em;
+    background-position-y: 50%, -21em;
+  }
+
+  .frm-decoration::after {
+    position: absolute;
+    content: url("./images/illustration-box-desktop.svg");
+    left: -22.1%;
+    top: 40%;
+  }
 }
 
 @media screen and (max-width: 875px) {
   .form {
     flex-direction: column;
+    margin: auto 1em;
+  }
+
+  h1 {
+    text-align: center;
   }
 
   .frm-faq {
-    padding: 3em;
+    padding: 4em 2em;
+  }
+
+  .frm-decoration {
+    height: 8.7em;
+    background: url("./images/bg-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 20em;
+    background-position-x: 50%;
+  }
+
+  .frm-decoration::after {
+    position: relative;
+    content: url("./images/illustration-woman-online-mobile.svg");
+    top: -9em;
   }
 }
 
@@ -123,20 +158,5 @@ p.active {
 }
 
 .frm-decoration {
-  background: url("./images/bg-pattern-desktop.svg") no-repeat;
-  background-size: 200%;
-  background-position-x: -41em;
-  background-position-y: -21em;
   position: relative;
-}
-
-.frm-decoration img {
-  position: relative;
-  left: -10.5em;
-  top: 10%;
-}
-
-.frm-decoration img::before {
-  position: relative;
-  content: url("./images/illustration-box-desktop.svg");
 }
