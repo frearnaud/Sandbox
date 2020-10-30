@@ -29,6 +29,9 @@ h1 {
 }
 
 h3 {
+  line-height: 2.7em;
+  margin: 0;
+  vertical-align: middle;
   font-weight: 400;
   color: var(--col-drk-very-grayish-blue);
 }
@@ -104,6 +107,7 @@ p.active {
 @media screen and (max-width: 875px) {
   .form {
     flex-direction: column;
+    align-items: center;
     margin: auto 1em;
   }
 
@@ -112,25 +116,26 @@ p.active {
   }
 
   .frm-faq {
-    padding: 4em 2em;
+    padding: 0em 2em 4em 2em;
+    min-width: 29em;
   }
 
   .frm-decoration {
     height: 8.7em;
     background: url("./images/bg-pattern-mobile.svg");
     background-repeat: no-repeat;
-    background-size: 20em;
-    background-position-x: 50%;
+    background-position-x: 100%;
   }
 
   .frm-decoration::after {
-    position: relative;
     content: url("./images/illustration-woman-online-mobile.svg");
+    position: relative;
     top: -9em;
   }
 }
 
 .frm-question {
+  overflow: hidden;
   cursor: pointer;
   position: relative;
   border-bottom: 2px solid var(--col-lt-grayish-blue);
@@ -149,12 +154,14 @@ p.active {
 .frm-question::after {
   position: absolute;
   content: url("./images/icon-arrow-down.svg");
-  top: 0.2em;
+  top: 1.2em;
   right: 1em;
+  transition: transform 100ms linear;
 }
 
 .frm-question.active::after {
-  transform: rotate(90);
+  transform: rotate(180deg);
+  transition: transform 100ms linear;
 }
 
 .frm-decoration {
