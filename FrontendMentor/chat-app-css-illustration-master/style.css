@@ -4,7 +4,6 @@
   --clr-violet-200: hsl(276, 100%, 81%);
   --clr-violet-500: hsl(276, 55%, 52%);
   --clr-d_violet-100: hsl(270, 20%, 96%);
-  --clr-d_violet-150: hsl(288, 33%, 97%);
   --clr-d_violet-200: hsl(272, 41%, 93%);
   --clr-d_violet-300: hsl(270, 7%, 64%);
   --clr-d_violet-600: hsl(271, 15%, 43%);
@@ -35,7 +34,11 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+
+.container > div {
+  margin: 6rem;
 }
 
 .container::before {
@@ -52,18 +55,6 @@ body {
     var(--clr-grad1) 0%,
     var(--clr-grad2) 100%
   );
-}
-
-.container::after {
-  z-index: -1;
-  position: absolute;
-  bottom: 0;
-  left: 75%;
-  content: "";
-  height: 85%;
-  width: 35%;
-  border-radius: 500em 500em 0 0;
-  background-color: var(--clr-d_violet-150);
 }
 
 @media (max-width: 820px) {
