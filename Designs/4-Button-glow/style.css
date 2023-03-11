@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700&display=swap");
+
+:root {
+  --font-fam: "Inter", sans-serif;
+  --clr-bgd: gainsboro;
+  --clr-color: black;
+  --clr-link: #242486;
+  --drk-bgd: #0d0d20;
+  --drk-color: white;
+  --drk-link: #d4d4e7;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--font-fam);
+  background-color: var(--drk-bgd);
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  color: var(--clr-link);
+}
+
+footer {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.button {
+  cursor: pointer;
+  background-color: var(--drk-link);
+  font-size: 2rem;
+  padding: 0.75rem 1.25rem;
+  border: 0;
+  border-radius: 1.25rem;
+}
+
+.glow-effect {
+  --glow-line-color: #fff;
+  --glow-line-thickness: 2px;
+  --glow-blur-color: #fff;
+  --glow-blur-size: 8px;
+  --container-offset: 100px;
+  --animation-speed: 1200ms;
+  position: relative;
+}
+
+.glow-container {
+  pointer-events: none;
+  position: absolute;
+  inset: calc(var(--container-offset) / -2);
+  width: calc(100% + var(--container-offset));
+  height: calc(100% + var(--container-offset));
+  opacity: 0;
+}
+
+.glow-blur,
+.glow-line {
+  width: calc(100% - var(--container-offset));
+  height: calc(100% - var(--container-offset));
+  x: calc(var(--container-offset) / 2);
+  y: calc(var(--container-offset) / 2);
+  rx: 1.25rem;
+  fill: transparent;
+  stroke-width: 5px;
+  stroke-dasharray: 20px 30px;
+}
+
+.glow-effect:is(:hover, :focus) :is(.glow-line, .glow-blur) {
+  stroke-dashoffset: -80px;
+  transition: stroke-dashoffset var(--animation-speed) ease-in;
+}
+
+.glow-line {
+  stroke: var(--glow-line-color);
+  stroke-width: var(--glow-line-thickness);
+}
+
+.glow-blur {
+  stroke: var(--glow-blur-color);
+  stroke-width: var(--glow-blur-size);
+  filter: blur(5px);
+}
+
+.glow-effect:is(:hover, :focus) .glow-container {
+  animation: glow-visibility var(--animation-speed);
+}
+
+@keyframes glow-visibility {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
