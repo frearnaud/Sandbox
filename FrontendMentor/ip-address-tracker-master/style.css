@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+:root {
+  --clr-gray-900: hsl(0, 0%, 17%);
+  --clr-gray-600: hsl(0, 0%, 59%);
+  --ff: "Rubik", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: var(--ff);
+  min-height: 100vh;
+  text-align: center;
+}
+
+header {
+  background-image: url(./images/pattern-bg.png);
+  background-size: 100%;
+  position: relative;
+}
+
+h1 {
+  color: white;
+  font-weight: 500;
+  padding: 0.5em 0;
+}
+
+h4 {
+  color: var(--clr-gray-600);
+  font-weight: 700;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.ip-form {
+}
+
+.ipt > button {
+  background-color: black;
+  background-image: url(./images/icon-arrow.svg);
+}
+
+.info-panel {
+  margin: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 0.7rem;
+  max-width: 60rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  transform: translateY(50%);
+}
+
+@media screen and (max-width: 970px) {
+  .info-panel {
+    flex-direction: column;
+  }
+
+  .separator {
+    display: none;
+  }
+
+  .info-panel > div {
+    text-align: center;
+  }
+}
+
+.info-panel > div {
+  padding: 1rem;
+  text-align: left;
+  width: 15rem;
+}
+
+.ip-info {
+  color: var(--clr-gray-900);
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.separator {
+  width: 1px;
+  height: 3rem;
+  background-color: var(--clr-gray-600);
+}
+
+section {
+  background-color: yellow;
+}
